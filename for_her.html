@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You ❤️</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff0f5;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #ff4d6d;
+    }
+    #no {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+    #yes {
+      font-size: 20px;
+      padding: 10px 20px;
+      background: #ff4d6d;
+      color: white;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 Happy New Year My Love 🎉</h1>
+
+  <p>
+    I made this while thinking of you.<br>
+    Every smile of mine has your name in it.<br>
+    So I want to ask you something…
+  </p>
+
+  <h2>Will you be my wife? 💍</h2>
+
+  <button id="yes" onclick="yesClicked()">YES 💖</button>
+  <button id="no" onclick="noClicked()">NO 🙈</button>
+
+  <script>
+    let size = 20;
+    function noClicked() {
+      size -= 4;
+      if (size <= 0) {
+        document.getElementById("no").style.display = "none";
+      } else {
+        document.getElementById("no").style.fontSize = size + "px";
+      }
+    }
+
+    function yesClicked() {
+      document.body.innerHTML = `
+        <h1>❤️ SHE SAID YES ❤️</h1>
+        <p>
+          Thank you for choosing me.<br>
+          I promise to choose you every day.<br><br>
+          — Sanchit
+        </p>
+      `;
+    }
+  </script>
+
+</body>
+</html>
